@@ -48,5 +48,5 @@ class DS1302
         uint8_t _bcd2dec(uint8_t bcd);
 };
 
-#endif // _DS_1302_H
+#endif // _RTC_DS1302_H
 
