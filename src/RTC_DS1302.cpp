@@ -43,7 +43,7 @@ void DS1302::getDateTime(){
 
 void DS1302::setReg(uint8_t Reg, uint8_t Val){		// Установка регистра
     pinMode(_pin_dat, OUTPUT);
-    digitalWrite(_pin_rst, HIGH); _writeByte(REG_WP);   _writeByte0);	   digitalWrite(_pin_rst, LOW);
+    digitalWrite(_pin_rst, HIGH); _writeByte(REG_WP);   _writeByte(0);	   digitalWrite(_pin_rst, LOW);
     digitalWrite(_pin_rst, HIGH); _writeByte(Reg);	_writeByte(_dec2bcd(Val)); digitalWrite(_pin_rst, LOW);
 }
 
